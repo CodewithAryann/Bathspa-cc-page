@@ -55,3 +55,57 @@ body[theme="white"] .section{
     font-size: 22px;
     color: white;
 }
+.makers-img-div1 , .makers-img-div2{
+    margin-top: 4vw;
+    display: flex;
+    width: 20%;
+}
+.makers-img-div3{
+    display: flex;
+    margin-top: 2vw;
+    width: 20%;
+}
+
+
+#moving-text {
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+#moving-text::-webkit-scrollbar {
+    display: none;
+}
+
+.con {
+    white-space: nowrap;
+    display: inline-block;
+    animation-name: move;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+#moving-text h1 {
+    font-size: 9vw;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+#gola {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: #f8cc27;
+    margin: 1vw 2vw;
+}
+
+@keyframes move {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}

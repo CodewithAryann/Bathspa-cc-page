@@ -147,13 +147,6 @@ body[theme="white"] .section{
     width: 100%;
     text-align: left;
 }
-/* .join-h1-div{
-    width: 145%;
-    margin-left: 43px;
-    font-size: 24.5px;
-    width: 100%;
-    text-align: left;
-} */
 .join-h1-div h1{
     font-weight: 300;
 }
@@ -210,5 +203,20 @@ body[theme="white"] .section{
    
    .button:active {
     filter: brightness(.8);
+   }
+   .quick{
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+   }
+   .quick h1{
+    margin-top: 6vw;
+    font-size: 35px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #9b46ab;
+    border-radius: 15px;
+    width: 24%;
    }
    

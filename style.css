@@ -1,53 +1,66 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-:root{
-    --black:black;
-    --white:white;
-    --white-brown:rgb(248, 244, 225);
+
+:root {
+    --black: black;
+    --white: white;
+    --white-brown: rgb(248, 244, 225);
 }
-body{
+
+body {
     transition: background-color ease-out .5s;
 }
-body[theme="black"]{
+
+body[theme="black"] {
     background-color: var(--black);
 }
-body[theme="black"] .section{
-   color: var(--white);
+
+body[theme="black"] .section {
+    color: var(--white);
 }
-body[theme="white"]{
+
+body[theme="white"] {
     background-color: var(--white);
 }
-body[theme="white"] .section{
+
+body[theme="white"] .section {
     background-color: var(--black);
- }
-.vidodiv{
+}
+
+.vidodiv {
     clip-path: circle(var(--clip) at 50% 50%);
 }
-.video-div video{
+
+.video-div video {
     position: absolute;
     z-index: 0;
 }
-.video-div img{
+
+.video-div img {
     position: absolute;
     z-index: 1;
 }
-.video-div #logo{
+
+.video-div #logo {
     width: 6%;
     top: 17%;
     left: 5%;
 }
-.video-div #cc-img{
+
+.video-div #cc-img {
     width: 1028px;
     height: 390px;
     object-fit: cover;
     left: 13%;
     top: 17%;
 }
-.video-div h1{
+
+.video-div h1 {
     position: absolute;
     z-index: 1;
     top: 90%;
@@ -56,12 +69,16 @@ body[theme="white"] .section{
     font-size: 22px;
     color: white;
 }
-.makers-img-div1 , .makers-img-div2, .makers-img-div4{
+
+.makers-img-div1,
+.makers-img-div2,
+.makers-img-div4 {
     margin-top: 4vw;
     display: flex;
     width: 20%;
 }
-.makers-img-div3{
+
+.makers-img-div3 {
     display: flex;
     margin-top: 2vw;
     width: 20%;
@@ -111,13 +128,14 @@ body[theme="white"] .section{
     }
 }
 
-.join{
+.join {
     margin-top: 3vw;
     font-family: "Poppins", sans-serif;
     font-size: 35px;
     text-align: center;
     font-weight: 400;
 }
+
 .join-div {
     padding: 90px;
     display: flex;
@@ -133,9 +151,9 @@ body[theme="white"] .section{
     flex: 1;
     height: 100vh;
     background-image: url('https://static.wixstatic.com/media/nsplsh_6f7572514852544532494d~mv2_d_5472_3648_s_4_2.jpg');
-    background-size: cover; 
-    background-position: -210px center; 
-    background-attachment: fixed; 
+    background-size: cover;
+    background-position: -210px center;
+    background-attachment: fixed;
 }
 
 .join-h1-div {
@@ -147,9 +165,11 @@ body[theme="white"] .section{
     width: 100%;
     text-align: left;
 }
-.join-h1-div h1{
+
+.join-h1-div h1 {
     font-weight: 300;
 }
+
 .button {
     --color: #8738c3;
     padding: 0.8em 1.7em;
@@ -167,9 +187,10 @@ body[theme="white"] .section{
     color: var(--color);
     z-index: 1;
     margin-top: 1vw;
-   }
-   
-   .button::before, .button::after {
+}
+
+.button::before,
+.button::after {
     content: '';
     display: block;
     width: 50px;
@@ -180,43 +201,66 @@ body[theme="white"] .section{
     z-index: -1;
     background-color: var(--color);
     transition: 1s ease;
-   }
-   
-   .button::before {
+}
+
+.button::before {
     top: -1em;
     left: -1em;
-   }
-   
-   .button::after {
+}
+
+.button::after {
     left: calc(100% + 1em);
     top: calc(100% + 1em);
-   }
-   
-   .button:hover::before, .button:hover::after {
+}
+
+.button:hover::before,
+.button:hover::after {
     height: 410px;
     width: 410px;
-   }
-   
-   .button:hover {
+}
+
+.button:hover {
     color: rgb(255, 255, 255);
-   }
-   
-   .button:active {
+}
+
+.button:active {
     filter: brightness(.8);
-   }
-   .quick{
+}
+
+.quick {
     font-family: "Poppins", sans-serif;
-    display: flex;
-    justify-content: center;
-   }
-   .quick h1{
-    margin-top: 6vw;
-    font-size: 35px;
-    font-weight: 500;
-    text-transform: uppercase;
+    margin-top: 4vw;
+}
+
+.quick h1 {
     text-align: center;
-    background-color: #9b46ab;
-    border-radius: 15px;
-    width: 24%;
-   }
-   
+    font-size: 40px;
+    letter-spacing: -0.2px;
+    word-spacing: 4.4px;
+    color: #000000;
+    font-weight: 400;
+    text-decoration: none solid rgb(68, 68, 68);
+    font-style: italic;
+    font-variant: small-caps;
+    text-transform: none;
+    font-weight: 700;
+}
+.quick h1 span{
+    color: rgb(104, 26, 128);
+}
+/* .quick-h1{
+    animation: quickh1Animation both;
+    animation-timeline: view(70% 5%);
+}
+@keyframes quickh1Animation {
+    from{
+        opacity: 0;
+        transform: translateY(200px) scale(0.3);
+    } 
+    to{
+        opacity: 1;
+        transform: translateY(0) scale(1);
+
+    }
+    
+} */

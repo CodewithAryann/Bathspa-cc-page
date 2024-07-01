@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
     margin: 0;
@@ -234,33 +235,80 @@ body[theme="white"] .section {
 
 .quick h1 {
     text-align: center;
-    font-size: 40px;
+    font-size: 50px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
     letter-spacing: -0.2px;
     word-spacing: 4.4px;
     color: #000000;
-    font-weight: 400;
     text-decoration: none solid rgb(68, 68, 68);
-    font-style: italic;
-    font-variant: small-caps;
-    text-transform: none;
-    font-weight: 700;
 }
 .quick h1 span{
-    color: rgb(104, 26, 128);
+    color: #8738c3;
 }
-/* .quick-h1{
-    animation: quickh1Animation both;
-    animation-timeline: view(70% 5%);
-}
-@keyframes quickh1Animation {
-    from{
-        opacity: 0;
-        transform: translateY(200px) scale(0.3);
-    } 
-    to{
-        opacity: 1;
-        transform: translateY(0) scale(1);
-
-    }
-    
-} */
+ .quick a {
+    font-family: Georgia, serif;
+    font-size: 4vw;
+    font-weight: 400;
+    color: #484848;
+    margin-left: 7vw;
+    filter: blur(1px);
+    display: grid;
+ }
+ .links{
+    padding-top: 44px;
+ }
+ #link1{
+    display: flex;
+    width: 27%;
+    gap: 3%
+ }
+ #link2{
+    width: 37%;
+    margin-left: 11vw;
+    display: flex;
+    gap: 3%;
+ }
+ #link3{
+    width: 37%;
+    margin-left: 16vw;
+    display: flex;
+    gap: 3%;
+ }
+ #link4{
+    width: 37%;
+    margin-left: 20vw;
+    display: flex;
+    gap: 3%;
+ }
+ #link5{
+    width: 38%;
+    margin-left: 24vw;
+    display: flex;
+    gap: 3%;
+ }
+ #link6{
+    width: 40%;
+    margin-left: 28vw;
+    display: flex;
+    gap: 3%;
+ }
+ #link7{
+    width: 38%;
+    margin-left: 32vw;
+    display: flex;
+    gap: 3%;
+ }
+ #link8{
+    width: 51%;
+    margin-left: 36vw;
+    display: flex;
+    gap: 3%;
+ }
+ #link1 span, #link2 span, #link3 span,#link4 span, #link5 span,#link6 span,#link7 span,#link8 span{
+    color: #8738c3;
+ }
+ .links :hover{
+    color: rgb(0, 0, 0);
+    filter: blur(0px);
+ }

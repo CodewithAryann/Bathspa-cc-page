@@ -323,7 +323,7 @@ body[theme="white"] .section {
     flex: 1;
     height: 90vh;
     background-size: contain;
-    background-position: center;
+    background-position: left;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }

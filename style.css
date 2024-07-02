@@ -110,7 +110,7 @@ body[theme="white"] .section {
     text-transform: uppercase;
 }
 
-#gola {
+#circle {
     height: 70px;
     width: 70px;
     border-radius: 50%;
@@ -349,7 +349,7 @@ body[theme="white"] .section {
  }
 .courses{
     display: flex;
-    gap: 5%;
+    gap: 7%;
     font-size: 21px;
     width: 162%;
     font-family: "Montserrat", sans-serif;
@@ -364,4 +364,8 @@ body[theme="white"] .section {
     margin-bottom: 1vw;
     color: #8738c3;
     font-weight: 500;
+    cursor: pointer;
+}
+span{
+    color: #8738c3;
 }

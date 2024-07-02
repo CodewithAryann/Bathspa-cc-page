@@ -92,6 +92,62 @@ document.getElementById("scrollToTopBtn").addEventListener("click", function() {
 
     scrollToTop(2000); // Adjust the duration as needed (2000ms = 2 seconds)
 });
+
+    document.addEventListener("DOMContentLoaded", () => {
+        gsap.from("#logo", { duration: 2, y: -100, opacity: 0, ease: "bounce" });
+        gsap.from("#cc-img", { duration: 2, x: -100, opacity: 0, ease: "power3.out", delay: 0.5 });
+        gsap.from(".video-div h1", { duration: 2, x: 100, opacity: 0, ease: "power3.out", delay: 1 });
+      });    
+
+
+
+    gsap.registerPlugin(ScrollTrigger);
+
+  
+    gsap.to("#moving-text .con", {
+        scrollTrigger: {
+            trigger: "#moving-text",
+            start: "top center",
+            end: "bottom center",
+            scrub: true,
+        },
+        x: 100, 
+        duration: 1,
+        stagger: 0.5
+    });
+
+    gsap.from(".makers-img-div1 img, .makers-img-div2 img", {
+        scrollTrigger: {
+            trigger: ".makers-img",
+            start: "top 80%",
+            end: "bottom 90%",
+            scrub: true,
+        },
+        opacity: 0,
+        y: 100,
+        duration: 1,
+        stagger: 0.3
+    });
+    
+    gsap.from(".makers-img-div3 img, .makers-img-div4 img", {
+        scrollTrigger: {
+            trigger: ".makers-img2",
+            start: "top 80%",
+            end: "bottom 90%",
+            scrub: true,
+        },
+        opacity: 0,
+        y: 100,
+        duration: 1,
+        stagger: 0.3
+    });
+
+
+
+
+
+
+
 loco();
 HomepageAnimation();
 realAnimation();

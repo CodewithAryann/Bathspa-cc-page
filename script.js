@@ -96,19 +96,7 @@ function loco() {
         const locomotiveScroll = new LocomotiveScroll();
     })();
 }
-function capsulesAnimation() {
-    gsap.to(".capsule:nth-child(2)", {
-        scrollTrigger: {
-            trigger: ".capsules",
-            start: "top 70%",
-            end: "bottom bottom",
-            markets: true,
-            scrub: 1
-        },
-        y: 0,
-        ease: Power4
-    })
-}
+
 
 function themechange(){
     let themeStack = [];

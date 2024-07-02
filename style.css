@@ -372,7 +372,7 @@ span{
 .join-now{
     background-image: url('https://static.wixstatic.com/media/nsplsh_82caa8ab7e1648039e9c58944a5c9e71~mv2.jpg/v1/fill/w_1263,h_784,al_t,q_85,usm_1.20_1.00_0.01,enc_auto/nsplsh_82caa8ab7e1648039e9c58944a5c9e71~mv2.jpg');
     flex: 1;
-    height: 70vh;
+    height: 80vh;
     background-size:cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -412,7 +412,7 @@ span{
     font-family: inherit;
     color: #ffffff;
     position: absolute;
-    left: 44%;
+    left: 43.6%;
     margin-top: 3vw;
    }
    
@@ -436,5 +436,24 @@ span{
    
    button:hover {
     color: #111;
+   }
+   .success{
+    display: flex;
+    margin-top: 4vw;
+    padding: 5% 5% ;
+    gap: 10%;
+    align-items: baseline;
+   }
+   .success-1, .success-3, .success-4{
+    width: 31%;
+   }
+   .success-1 p, .success-2 p, .success-3 p,.success-4 p{
+    text-align: center;
+   }
+   .success-1 img , .success-2 img , .success-3 img, .success-4 img{
+    margin-bottom: 1vw;
+   }
+   .success-2{
+    width: 24%;
    }
    

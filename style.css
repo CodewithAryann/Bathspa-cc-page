@@ -416,7 +416,7 @@ span{
     margin-top: 3vw;
    }
    
-   button::before {
+ .join-now  button::before {
     content: '';
     width: 0;
     height: 300%;
@@ -502,6 +502,32 @@ span{
     font-weight: 500;
     line-height: 41px;
 }
-.footer-button{
+.footer-button {
     position: absolute;
+    bottom: 71%;
+    left: 7%;
+    transform: translateX(-50%);
+}
+
+.footer-btn {
+    background-color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.footer-btn svg {
+    fill: #000; 
+    width: 24px;
+    height: 24px;
+}
+
+.footer-btn:hover {
+    background-color: #f0f0f0;
 }

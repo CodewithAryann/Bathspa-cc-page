@@ -67,62 +67,32 @@ function teamAnimation() {
 
         })
 }
-function ParaAnimation() {
-    var clutter = "";
-    document.querySelector(".textpara")
-        .textContent.split("")
-        .forEach(function (e) {
-            if (e === " ") clutter += `<span>&nbsp;</span>`
-            clutter += `<span>${e}</span>`
-        })
-    document.querySelector(".textpara").innerHTML = clutter;
-    gsap.set(".textpara span", {
-        opacity: .1
-    })
-    gsap.to(".textpara span", {
-        scrollTrigger: {
-            trigger: ".para",
-            start: "top 30%",
-            end: "bottom 110%",
-            scrub: 1
-        },
-        opacity: 1,
-        stagger: .03,
-        ease: Power4
-    })
-}
 function loco() {
     (function () {
         const locomotiveScroll = new LocomotiveScroll();
     })();
 }
+document.getElementById("scrollToTopBtn").addEventListener("click", function() {
+    const scrollToTop = (duration) => {
+        const start = window.pageYOffset;
+        const startTime = performance.now();
 
+        const scroll = (currentTime) => {
+            const elapsed = currentTime - startTime;
+            const progress = Math.min(elapsed / duration, 1);
+            window.scrollTo(0, start * (1 - progress));
 
-function themechange(){
-    let themeStack = [];
-
-    document.querySelectorAll(".section").forEach(function (e) {
-        ScrollTrigger.create({
-            trigger: e,
-            start: "top 50%",
-            end: "bottom 50%",
-            onEnter: function() {
-                // Push the current theme to the stack before changing to the new theme
-                themeStack.push(document.body.getAttribute("theme") || "");
-                document.body.setAttribute("theme", e.dataset.color);
-            },
-            onEnterBack: function() {
-                // Pop the previous theme from the stack and apply it
-                document.body.setAttribute("theme", themeStack.pop() || "");
+            if (progress < 1) {
+                requestAnimationFrame(scroll);
             }
-        });
-    });
-}
+        };
 
-themechange();
+        requestAnimationFrame(scroll);
+    };
+
+    scrollToTop(2000); // Adjust the duration as needed (2000ms = 2 seconds)
+});
 loco();
 HomepageAnimation();
 realAnimation();
 teamAnimation();
-ParaAnimation();
-capsulesAnimation();

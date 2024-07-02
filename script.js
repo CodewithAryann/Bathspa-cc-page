@@ -42,7 +42,7 @@ function realAnimation() {
             end: "bottom bottom",
             scrub: 1
         },
-        xPercent: -230,
+        xPercent: -130,
         ease: Power4
     })
 }

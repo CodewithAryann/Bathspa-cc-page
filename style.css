@@ -334,3 +334,34 @@ body[theme="white"] .section {
     font-size: 54px;
     margin-left: 60px;
  }
+ .program {
+    margin-left: 25vw;
+ }
+ #program-info{
+    font-size: 36px;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: -30px;
+    margin-bottom: 30px;
+    font-weight: 800;
+    margin-left: 4vw;
+ }
+.courses{
+    display: flex;
+    gap: 5%;
+    font-size: 21px;
+    width: 162%;
+    font-family: "Montserrat", sans-serif;
+}
+.year-1 h1, .year-2 h1, .year-3 h1{
+    font-size: 33px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 1vw;
+}
+.year-1 p, .year-2 p,.year-3 p{
+    margin-bottom: 1vw;
+    color: #8738c3;
+    font-weight: 500;
+}

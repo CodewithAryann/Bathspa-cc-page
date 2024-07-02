@@ -369,3 +369,72 @@ body[theme="white"] .section {
 span{
     color: #8738c3;
 }
+.join-now{
+    background-image: url('https://static.wixstatic.com/media/nsplsh_82caa8ab7e1648039e9c58944a5c9e71~mv2.jpg/v1/fill/w_1263,h_784,al_t,q_85,usm_1.20_1.00_0.01,enc_auto/nsplsh_82caa8ab7e1648039e9c58944a5c9e71~mv2.jpg');
+    flex: 1;
+    height: 70vh;
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.join-now h1{
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    padding-top: 8vw;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    width: 66%;
+    margin-left: 16vw;
+}
+.join-now h2{
+    color: white;
+    font-family:"Montserrat", sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 4vw;
+}
+.join-now button {
+    padding: 0.8em 1.8em;
+    border: 2px solid #ffffff;
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: .3s;
+    z-index: 1;
+    font-family: inherit;
+    color: #ffffff;
+    position: absolute;
+    left: 44%;
+    margin-top: 3vw;
+   }
+   
+   button::before {
+    content: '';
+    width: 0;
+    height: 300%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background: white;
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+   }
+   
+   button:hover::before {
+    width: 105%;
+   }
+   
+   button:hover {
+    color: #111;
+   }
+   
